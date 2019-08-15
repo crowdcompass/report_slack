@@ -76,7 +76,7 @@ class report_slack (
   ini_subsetting { 'slack reporting':
     ensure               => $report_ensure,
     path                 => $settings::config,
-    section              => 'master',
+    section              => 'main',
     setting              => 'reports',
     subsetting_separator => ',',
     subsetting           => 'slack',
